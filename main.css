@@ -53,10 +53,39 @@ body {
 
 .v2-gutter {
   height: 23px;
-  width: 45px;
+  width: 50px;
   border-radius: 15px;
 }
 
 .v2-knob {
   top: initial;
 }
+
+.v2-knob.active {
+  left: 28px;
+}
+
+.v2-knob:before {
+  content: 'ON';
+  right: 25px;
+  position: absolute;
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.v2-knob:after {
+  content: 'OFF';
+  left: 23px;
+  position: absolute;
+  display: flex;
+  color: white;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1.8;
+}
+

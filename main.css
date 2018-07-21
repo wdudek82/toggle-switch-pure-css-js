@@ -37,14 +37,26 @@ body {
   height: 22px;
   width: 22px;
   top: -4px;
+  left: -2px;
   right: 22px;
   transition: all 300ms ease-in-out;
 }
 
 .knob.active {
   right: -2px;
+  left: 22px;
 }
 
 .gutter.active {
   background: #45a700;
+}
+
+.v2-gutter {
+  height: 23px;
+  width: 45px;
+  border-radius: 15px;
+}
+
+.v2-knob {
+  top: initial;
 }
